@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="nav">
+        <h2>Python Basic</h2><br>
+        <nav id="navbar">
+            <a class="nav-link" href="#Intro">Introduction</a><br><br><br>
+            <a class="nav-link" href="#Python">Python</a><br><br><br>
+            <a class="nav-link" href="#Hello_world">Hello World</a><br><br><br>
+            <a class="nav-link" href="#Varialbe">Variables</a><br><br><br>
+            <a class="nav-link" href="#Data_types">Data Types</a><br><br><br>
+            <a class="nav-link" href="#Conditional_statment">Conditional statment</a><br><br><br>
+            <a class="nav-link" href="#Loops">Loops</a><br><br><br>
+        </nav>
+    </div>
+    <div>
+        <main id="main-doc">
+            <section id="Intro" class="main-section">
+                <h2>Introduction</h2>
+                <p>Python is a general-purpose, versatile, and powerful programming language.It’s a great first language because it’s concise and easy to read.Whatever you want to do, Python can do it. It is also a good language to have in any programmer’s stack as it can be used for everything from web development to software development and data science applications.It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). </p><br>
+                <p>Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. It uses English keywords frequently where as other languages use punctuation. It has fewer syntactical constructions than other languages.From web development to machine learning to data science, Python is the language for you.</p>
+            </section>
+            <section id="Python" class="main-section">
+                <h2>What is Python?</h2>
+                <p>Python is Interpreted − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.</p><br>            
+                <p>Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:</p>   <br> 
+                    <li> Python is Interactive − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</li>
+                    
+                    <li>Python is Object-Oriented − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</li> 
+                    
+                    <li>Python is a Beginner's Language − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.</p></li> 
+            </section>
+            <section id="Hello_world" class="main-section">
+                <h2>Hello World</h2>
+                <p>Just to give you a little excitement about Python, I'm going to give you a small conventional Python Hello World program</p><br>
+                <code>print ("Hello, Python!");</code>    
+            </section>
+            <section id="Varialbe" class="main-section">
+                <h2>Variables</h2>
+                <p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.</p><br>
+                <p>Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.</p> <br>
+                <code>#!/usr/bin/python </code><br>
+                <code>counter = 100          # An integer assignment</code><br>
+                <code>miles   = 1000.0       # A floating point </code>  <br>  
+                <code> name    = "John"       # A string </code>   <br>
+                
+                
+                 
+                  
+            </section>
+            <section id="Data_types" class="main-section">
+                <h2>Data Types</h2>
+    
+                <h3>Standard Data Types</h3>    
+                <p>
+                    The data stored in memory can be of many types. For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters. Python has various standard data types that are used to define the operations possible on them and the storage method for each of them.
+                </p>   
+                <p>Python has five standard data types</p>
+                <li>Numbers</li>
+                <code>var1 = 1</code><br><br>
+                <li>String</li>
+                <code>str = 'Hello World!'</code><br><br>
+                <li>List</li>
+                <code>list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]</code><br><br>
+                <li>Tuple</li>
+                <code>tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  )</code><br><br>
+                <li>Dictionary</li><br><br>
+                <code>tinydict = {'name': 'john','code':6734, 'dept': 'sales'}</code>
+                
+            </section>
+            <section id="Conditional_statment" class="main-section">
+                <h2>Conditional Statment</h2><br>
+                <p>Decision making is anticipation of conditions occurring while execution of the program and specifying actions taken according to the conditions.</p><br>
+                <p>Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take and which statements to execute if outcome is TRUE or FALSE otherwise.</p><br>
+                <code>#!/usr/bin/python</code><br>
+                <code>var = 100</code><br>
+                <code> if ( var == 100 ) : print "Value of expression is 100"</code> <br>   
+                <code>print "Good bye!"</code><br>   
+                    
+            </section>
+            <section id="Loops" class="main-section">
+                <h2>Loops</h2><br>
+                <p>In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.</p><br>
+                <p>Programming languages provide various control structures that allow for more complicated execution paths.</p><br>
+                <h3>While loop</h3><br>
+                <p>A while loop statement in Python programming language repeatedly executes a target statement as long as a given condition is true.</p><br>
+                <h3>Syntax</h3><br>
+                <p>The syntax of a while loop in Python programming language is −</p><br>
+                <code>while expression:</code><br>
+                <code>statement(s)</code><br><br>
+                <code>#!/usr/bin/python</code><br>
+                <code>count = 0</code><br>
+                <code>while (count < 9):</code><br>
+                <code>print 'The count is:', count</code><br>
+                <code> count = count + 1</code><br>
+                <code>print "Good bye!"</code><br>
+                <p>When the above code is executed, it produces the following result −</p><br>
+    
+            </section>
+           
+        </main>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
