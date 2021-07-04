@@ -1,0 +1,154 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+nav>ul>li{
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 70px; 
+    
+}
+li>a{
+    text-decoration: none;
+    color: white;  
+}
+#welcome-section{
+    width: 100%;
+    height:100vh;
+    background-color: black;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section>h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 20%;
+}
+#projects{
+    width: 100%;
+    height: 100vh;
+    
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#technical-skills{
+    width: 100%;
+    height: 100vh;
+    
+}
+.tech{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(63, 61, 61);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contacts{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(85, 83, 83);
+}
+.project-title{
+    width: 20%;
+    height: 50vh;
+    background-color: gray;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    box-shadow: 0 20px 50px #03045e;
+    border: 3px solid #2a3cad;
+    background: #111845a6;
+}
+.project-detail>a>h2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    border-style: none;
+    
+}
+.project-detail>a>h2:hover {
+    border-bottom: 5px solid snow;
+}
+.project-detail>a{
+    text-decoration: none;
+}
+.skill-title{
+    width: 20%;
+    height: 30vh;
+    background-color: gray;
+    background-image: linear-gradient(90deg, #3a3d40 0%, black 100%);
+    align-self: center;
+    box-shadow: 0 20px 50px #1a1a24;
+    border: 3px solid #2f3036;
+    background: #09090aa6;
+}
+.project-img>img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 55px;
+}
+.skill-img>img{
+    width: 100%;
+    height: 200px;
+   
+   }
+.name{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    background-color:rgb(48, 47, 47) ;
+   
+}   
+.ten{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    background-color:rgb(63, 61, 61) ;
+}   
+
+.conti{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.conti-title{
+    width: 25%;
+}
+.headlinr{
+    possi-top: 10%;
+}
+.headinr>h2{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+    text-align: center;
+    
+    
+}
+.headinr>p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
