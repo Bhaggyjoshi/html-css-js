@@ -25,3 +25,7 @@ function addToLocal(product) {
   // json = JSON.stringify(product);
   // console.log(JSON.stringify(product));
 }
+function myFunction() {
+  alert("Your Message sent.")
+  
+}

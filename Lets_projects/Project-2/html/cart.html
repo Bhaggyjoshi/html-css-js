@@ -4,7 +4,7 @@
     <title>Cart</title>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/cart.css">
-    <script src="../js/cart.js"></script>
+  
     
 </head>
 <body>
@@ -32,17 +32,27 @@
     <div class="cart-detail">
         <div class="detail">
             <h3>Shopping cart</h3>
-            <div class="product_detail">
-                <div class="product-1">
-                    <img src="" alt="">
+            <div class="product_detail" >
+                <div id="product-1" >
+                    <!-- <img id="proImg" src="" alt="">
                     <div class="product-info">
-                        
-                    </div>
+                        <div><span id="productName"></span></div>
+                        <div>Price $<span id="productPrice"></span></div>
+                    </div> -->
+                    <ul id="itemList"></ul>
                 </div>
                 
             </div>
         </div>
         
     </div>
+
+    <script src="../js/cart.js"></script>
+    <script>
+         renderCart();
+    </script>
+
+
+
 </body>
 </html>

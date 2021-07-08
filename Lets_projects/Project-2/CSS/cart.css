@@ -6,7 +6,7 @@
     width: 100%;
     height: 80px;
     background-color: aliceblue;
-    position: fixed;
+   
    
 }
 .navi>ul>li{
@@ -80,33 +80,46 @@ li {
 .cart-detail{
     width: 100%;
     height: 100vh;
-    background-color: midnightblue;
+    
 }
 .detail{
     width: 80%;
     height: 100%;
-    background-color: violet;
+    
     margin-left: 10%;
     margin-right: 10%;
 }
 .product_detail{
     width:100%;
     height: 50%;
-    background-color: blue;
+    margin-top: 40px;
+    background-color: whitesmoke;
 }
-.product-1{
+#product-1{
     width: 100%;
     height: 100%;
-    background-color: cornflowerblue;
-    display: flex;
+    
+    
 }
-.product-1>img{
-    width: 30%;
-    height: 100%;
-    background-color: aqua;
+#product-1>li{
+  display: block;
+}
+#product-1>li>img{
+    width: 25%;
+    height: 50%;
+    
 }
 .product-1>.product-info{
     width: 70%;
     height: 100%;
-    background-color: darkblue;
+    padding-left: 30px;
+}
+.cart-detail{
+  margin-top: 50px;
+}
+.cart-detail>.detail>h3{
+  font-size: 40px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }

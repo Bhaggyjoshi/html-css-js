@@ -33,14 +33,14 @@
 
     <div class="product">
         <div class="product-demo">
-            <div class="product-img">
+            <div class="product-img" >
                 <img id="proImg"  src="" alt="">
                 <div class="btn">
-                    <div class="btn-cart">
-                        <button type="submit"><a href="">Add to Cart</a> </button>
+                    <div class="btn-cart"  onclick="addToCart()">
+                        <button onclick="myFunction()" type="submit"><a href="">Add to Cart</a></button>
                     </div>
                     <div class="btn-buy">
-                        <button type="submit"><a href=""> Buy Now</a></button>
+                        <button onclick="usFunction()" type="submit"><a href="">Buy Now</a></button>
                     </div>
                 </div>
             </div>    
@@ -96,5 +96,6 @@
     </div>
 
     <script src="../js/product_detail.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 </html>
