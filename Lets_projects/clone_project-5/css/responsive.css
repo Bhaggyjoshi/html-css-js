@@ -1,0 +1,386 @@
+@media screen and (max-width:560px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* css for banner */
+
+    .banner{
+        
+        height: 400px;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .prev-btn, .next-btn{
+        display: none;
+    }
+    .banner-desc{
+        width: 100%;
+        height: 200px;
+    }
+    .header{
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+    .header>.header-child{
+        width: 100%;
+        
+        /* background-color: brown; */
+    }
+    .mob{
+       visibility: visible;
+    }
+    .header-child:nth-child(2){
+        background-image: url('https://livedemo00.template-help.com/wt_prod-22021/images/logo-default-120x45.png');
+        background-repeat: no-repeat;
+    }
+    .header>.header-child:first-child{
+        display: none;
+    }
+    .header>.header-child:last-child{
+        display: none;
+    }
+    .header-child>img{
+        display: none;
+    }
+    .banner-nav{
+        display: none;
+    }
+    .banner-content{
+        margin-top: 10px;
+         width: 100%;
+         height: 100px;
+         text-align: center;
+         /* background-color: white; */
+     }
+     .banner-content>h1{
+        
+        font-size: 32px;
+        
+    }
+    .banner-content>h6{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .banner-content>button{
+        width: 31%;
+        height: auto;
+        font-size: 14px;
+        
+         
+    }
+
+    /* css for destination */
+    .desti-banner{
+        width: 100%;
+        
+        /* background-color: cadetblue; */
+        margin-top: 20px;
+        padding-bottom: 25px;
+    }
+    .desti-desc{
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+
+    }
+
+    .desti-card{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 30px;
+        /* background-color:#0473db; */
+        transition: 0.3s;
+    }
+
+    .desti-card:hover{
+        transform: scale(1);
+        box-shadow: none;
+       
+    }
+    
+    /* css for euipments */
+    .equipi{
+        height: auto;
+        margin: 0;
+    }
+    .equip-card{
+        
+        flex-direction: column;
+    }
+    .card-det{
+        width: 100%;
+        
+        /* background-color: #777777; */
+       margin: 0px;
+       
+        
+    }
+    .card-dell{
+        width: 100%;
+        height: 350px;
+        /* background-color: #0473db; */
+        display: flex;
+        
+    }
+    .left{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .right{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .card-tit{
+        width: 100%;
+        height: 100%;
+        border-bottom: none;
+    }
+    .card-ig{
+        width: 100%;
+        height: 100%;
+        /* background-color: #5c5b55; */
+        border: none;
+        
+    }
+    .child-l>h4{
+        
+        margin-top:0px;
+        margin-bottom: 25px;
+        text-align:center;
+      
+    }
+    .child-l>p{
+        margin: 0px;
+        text-align: center;
+    }
+    .child-r>h4{
+       
+        margin-top: 0px;
+        margin-bottom: 30px;
+       text-align: center;
+    }
+    .child-r>p{
+        margin: 0px;
+        text-align: center;
+    }
+
+    /* css for score */
+    .score{
+        /* width: 560px; */
+        height: auto;
+        background-size: cover;
+    }
+    .score-details{
+        width: 100%;
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .score-desc{
+        width: 50%;
+        height: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* background-color:#f8ea49 ; */
+        color: white;
+    }
+    .card-score>h3{
+        font-size: 26px;
+        
+    }
+    .card-score-des{
+        font-size: 14px;
+       
+    }
+    .score-line{
+        width: 15%;
+        height: 1.5px;
+        display: inline-block;
+        background-color: white;
+        margin-right: 42%;
+        margin-left:42%;
+        transition: .3s;
+    }
+
+    /* css for choose banner */
+    .choose{
+        width: 100%;
+        height: 600px;
+        display: block;
+        align-items: center;
+    }
+    .choose-desc{
+
+        display: block;
+    }
+    .choose-img{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .choose-title{
+        width: 500px;
+        
+        /* background-color: aqua; */
+        
+        text-align: center;
+    }
+    .choose-title>h2{
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    .choose-detail{
+        width: 500px;
+        height: auto;
+        /* background-color: aqua; */
+    }
+    .detail-1{
+            width: 100%;
+            height: 100%;
+    }
+    .icon>.icon-round{
+        margin-bottom: 9.8px;
+    }
+
+    /* css for service */
+    .service{
+        width: 100%;
+        height:auto;
+        /* background-color: #0473db; */
+        margin-top: 300px;
+        margin-bottom: 30px;
+    }
+    .serivce-detail{
+        width: 100%;
+        height: auto;
+        /* background-color: #f8ea49; */
+        display: inline;
+       
+    }
+    .service-child{
+        width: 80%;
+        height: 150px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 50px;
+    }
+    /* css for gallery */
+
+    .gallery-container{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        
+    }
+    
+    /* css for newsletter */
+    .newsletter-detail{
+        width: 100%;
+        height: 100%;
+        /* background-color: #f8ea49; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .news{
+        text-align:left;
+    }
+    .news>button{
+        width: 80%;
+        height: 50%;
+    }
+
+    /* css for instructor */
+    .instructor{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .instruct-view{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .instruct-1{
+        width: 80%;
+        margin:auto;
+        margin-bottom: 50px;
+        /* background-color: burlywood; */
+    }
+
+    /* css for blog */
+
+    .blogs{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .blog-card{
+        width: 100%;
+        flex-direction: column;
+    }
+    .card-blog{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    /* css for footer  */
+    .footer{
+        height: auto;
+    }
+    .footer-sec{
+        
+        display:block;
+    }
+
+    .footer-detail{
+       
+        flex-direction: column;
+    }
+    .footer-gallery{
+        width: 300px;
+        height: 300px;
+        /* background-color: #eff3f8; */
+    }
+    .gall-heading{
+        padding-top: 20px;
+        
+    }
+    .footer-link{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .footer-touch{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .link-address{
+        width: 100%;
+        margin-top: 30px;
+        /* background-color: #2a333f; */
+    }
+    .touch-details{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .link-line{
+        width: 20%;
+        height: 10%;
+        background-color: #ffffff;
+        align-self: center;
+        transition: .4s;
+        cursor: pointer;
+    }
+}
