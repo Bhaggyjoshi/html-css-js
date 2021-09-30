@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 70%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(70, 20, 20); */
+}
+.form_container, .table_container{
+    
+    padding: 20px;
+}
+.form_container input{
+    height: 40px;
+    width: 25%;
+    text-indent: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+}
+.form_container input:focus{
+    box-shadow: 0 0 5px skyblue ;
+}
+
+.btn{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 35px;
+    padding-left: 35px;
+    border-radius: 5px;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+.btn:active{
+    box-shadow:  0 0 2px gray;
+}
+
+table{
+     border: 1px solid gray;
+     width: 100%;
+     border-collapse: collapse;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 18px;
+}
+th, td{
+    border: 1px solid lightgray;
+    height: 50px;
+}
+td{
+    text-indent: 20px;
+}
+.update_form{
+    display: none;
+}

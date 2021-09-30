@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter the Item</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+    <div class="modal-parent" id="modal-parent" >
+        <div class="modal">
+            <div class="modal-img">
+                <img id="superhero-image" src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/lg/1-a-bomb.jpg" alt="">
+            </div>
+            <div class="modal-details">
+                <div style="padding: 20px;">
+
+                   <div style="display: flex; justify-content: space-evenly;">
+
+                        <h1 id="superhero-name">Blade</h1>
+                        <button class="btn" onclick="closeModel()">Close</button>
+
+                   </div>
+
+                    <div class="appearance detail">
+                        <p class="detail-title">Apperance</p>
+                        <div class="details" >
+                            <div>
+                                <p class="property">Gender</p>
+                               <p class="value" id="superhero-gender">Male</p> 
+                            </div>
+                            
+                            <div>  
+                                <p class="property">Height</p>
+                                <p class="value" id="superhero-height"> 6.4</p>
+                            </div>
+                            <div>
+                                <p class="property">Weight</p>
+                                <p class="value" id="superhero-weight">620 kg</p>
+                            </div>
+                            <div>
+                                <p class="property">eye color </p>
+                                <p class="value" id="superhero-eye"> brown</p>    
+                            </div>
+                            <div>
+                                <p class="property">hair color </p>
+                                <p class="value" id="superhero-hair">black</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Biography detail">
+                        <p class="detail-title">Biography</p>
+                        <div class="details" >
+                            <div> 
+                                <p class="property">Full Name </p> 
+                                <p class="value" id="superhero-fullname"></p>
+                            </div>
+                            <div>
+                                <p class="property">Alter Ego </p>
+                                <p class="value" id="superhero-ego"></p>
+                            </div>
+                            <div>
+                                <p class="property">First Apperance </p>
+                                <p class="value" id="superhero-firstappear"></p>
+                            </div>
+                            <div>
+                                <p class="property">Publisher </p>
+                                <p class="value" id="superhero-publisher"></p>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="connections detail">
+                        <p class="detail-title">Connections</p>
+                        <div class="details" >
+                            <div> 
+                                <p class="property">Group Affliation </p> 
+                                <p class="value" id="superhero-groupaff"></p>
+                            </div>
+                            <div>
+                                <p class="property">Relatives </p>
+                                <p class="value"id="superhero-relatives"></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="powerstats detail">
+                        <p class="detail-title">Powerstats</p>
+                        <div class="details" >
+                            <div class=""> 
+                                <p class="property">Intelligence </p> 
+                                <div class="power-bg">
+                                    <div class="power-fg" id="superhero-intelligence" style="width:30%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="property">Speed</p>
+                                <div class="power-bg">
+                                    <div class="power-fg" id="superhero-speed" style="width:30%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="property">Durability</p>
+                                <div class="power-bg">
+                                    <div class="power-fg" id="superhero-durability" style="width:30%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="property">Power</p>
+                                <div class="power-bg">
+                                    <div class="power-fg" id="superhero-power" style="width:30%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="property">Strength</p>
+                                <div class="power-bg">
+                                    <div class="power-fg" id="superhero-strength" style="width:30%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="property">Combate</p>
+                                <div class="power-bg">
+                                    <div class="power-fg" id="superhero-combat" style="width:30%"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+   
+    <div class="container">
+        <form action="" id="filter-form">
+        <div class="filters">
+            <input type="text " placeholder="search by name" class="filter-name-field" onkeyup="applyNameFilter('name',this.value)">
+        </div>
+        
+        <!-- holds filter fields -->
+        <div class="filters" >
+            <div class="filter-fields">
+                <!-- "this" is work similar to the document.getElemntById , cuurent element which is key word(this)-->
+                <div class="field-container" >
+                    <label>Select Gender</label>
+                    <select class="filter-field" onchange="selectFilter('gender',this.value)">
+                        <option value="" >Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+
+                <div class="field-container">
+                    <label>select publisher</label>
+                <select class="filter-field" onchange="selectFilter('publisher',this.value)">
+                    <option value="" >Select publisher</option>
+                    <Option value = 'Marvel Comics'>Marvel Comics</option>;
+                        <Option value = 'Dark Horse Comics'>Dark Horse Comics</option>;
+                        <Option value = 'DC Comics'>DC Comics</option>;
+                        <Option value = 'NBC - Heroes'>NBC - Heroes</option>;
+                        <Option value = 'Wildstorm'>Wildstorm</option>;
+                        <Option value = 'Archangel'>Archangel</option>;
+                        <Option value = 'Tempest'>Tempest</option>;
+                        <Option value = 'Giant-Man'>Giant-Man</option>;
+                        <Option value = 'Toxin'>Toxin</option>;
+                        <Option value = 'Angel'>Angel</option>;
+                        <Option value = 'Goliath'>Goliath</option>;
+                        <Option value = 'Oracle'>Oracle</option>;
+                        <Option value = 'Spoiler'>Spoiler</option>;
+                        <Option value = 'Nightwing'>Nightwing</option>;
+                        <Option value = 'Icon Comics'>Icon Comics</option>;
+                        <Option value = 'SyFy'>SyFy</option>;
+                        <Option value = 'George Lucas'>George Lucas</option>;
+                        <Option value = 'Meltdown'>Meltdown</option>;
+                        <Option value = 'Gemini V'>Gemini V</option>;
+                        <Option value = 'South Park'>South Park</option>;
+                        <Option value = 'Binary'>Binary</option>;
+                        <Option value = 'ABC Studios'>ABC Studios</option>;
+                        <Option value = 'Universal Studios'>Universal Studios</option>;
+                        <Option value = 'Star Trek'>Star Trek</option>;
+                        <Option value = 'Evil Deadpool'>Evil Deadpool</option>;
+                        <Option value = 'IDW Publishing'>IDW Publishing</option>;
+                        <Option value = 'Deadpool'>Deadpool</option>;
+                        <Option value = 'Black Racer'>Black Racer</option>;
+                        <Option value = 'Speed Demon'>Speed Demon</option>;
+                        <Option value = 'Impulse'>Impulse</option>;
+                        <Option value = 'Shueisha'>Shueisha</option>;
+                        <Option value = 'Sony Pictures'>Sony Pictures</option>;
+                        <Option value = 'J. K. Rowling'>J. K. Rowling</option>;
+                        <Option value = 'Batgirl III'>Batgirl III</option>;
+                        <Option value = 'Flash IV'>Flash IV</option>;
+                        <Option value = 'Titan Books'>Titan Books</option>;
+                        <Option value = 'Phoenix'>Phoenix</option>;
+                        <Option value = 'Power Woman'>Power Woman</option>;
+                        <Option value = 'Rebellion'>Rebellion</option>;
+                        <Option value = 'Iron Lad'>Iron Lad</option>;
+                        <Option value = 'Power Man'>Power Man</option>;
+                        <Option value = 'Image Comics'>Image Comics</option>;
+                        <Option value = 'Microsoft'>Microsoft</option>;
+                        <Option value = 'Boom-Boom'>Boom-Boom</option>;
+                        <Option value = 'Batgirl V'>Batgirl V</option>;
+                        <Option value = 'She-Thing'>She-Thing</option>;
+                        <Option value = 'Batman II'>Batman II</option>;
+                        <Option value = 'Batgirl'>Batgirl</option>;
+                        <Option value = 'Jean Grey'>Jean Grey</option>;
+                        <Option value = 'Robin II'>Robin II</option>;
+                        <Option value = 'Robin III'>Robin III</option>;
+                        <Option value = 'Red Hood'>Red Hood</option>;
+                        <Option value = 'Red Robin'>Red Robin</option>;
+                        <Option value = 'J. R. R. Tolkien'>J. R. R. Tolkien</option>;
+                        <Option value = 'Spider-Carnage'>Spider-Carnage</option>;
+                        <Option value = 'Venom III'>Venom III</option>;
+                        <Option value = 'Ms Marvel II'>Ms Marvel II</option>;
+                        <Option value = 'Aztar'>Aztar</option>;
+                        <Option value = 'Superman Prime One-Million'>Superman Prime One-Million</option>;
+                        <Option value = 'Angel Salvadore'>Angel Salvadore</option>;
+                        <Option value = 'Rune King Thor'>Rune King Thor</option>;
+                        <Option value = 'Anti-Venom'>Anti-Venom</option>;
+                        <Option value = 'Scorpion'>Scorpion</option>;
+                        <Option value = 'Vindicator II'>Vindicator II</option>;
+                        <Option value = 'Anti-Vision'>Anti-Vision</option>;
+                        <Option value = 'Thunderbird II'>Thunderbird II</option>;
+                        <Option value = 'Ant-Man'>Ant-Man</option>;
+                            <Option value = 'Other'>Other</option>;
+                        
+                </select>
+                </div>
+                
+                <div>
+                    <div class="field-container" >
+                        <label>Minimum weight</label>
+                        <input type="number" class="filter-field" placeholder="min-weight" value="0" onkeyup="selectFilter('minWeight', this.value)">
+                    </div>
+                    
+                    <div class="field-container">
+                        <label>Maximum weight</label>
+                        <input type="number" class="filter-field" placeholder="max-weight" value="1000" onkeyup="selectFilter('maxWeight', this.value)">
+                
+                    </div>
+
+
+                    <div class="field-container" >
+                        <label>Minimum Intelligence</label>
+                        <input type="number" class="filter-field" placeholder="min-weight" value="0" onkeyup="selectFilter('minIntelligence', this.value)">
+                    </div>
+                    
+                    <div class="field-container">
+                        <label>Maximum Intelligence</label>
+                        <input type="number" class="filter-field" placeholder="max-weight" value="100" onkeyup="selectFilter('maxIntelligence', this.value)">
+                
+                    </div>
+
+                </div>
+
+                
+               
+
+            </div>
+            <div style="display: flex; align-items: center;">
+                <button class="btn" type="button" onclick="applyFilters()" style=" margin-right: 10px;">Apply filters</button>
+                <button class="btn" type="button" onclick="cancelFilters()">Cancel filters</button>
+            </div>
+            
+            <!-- <input type="text " placeholder="Filter" class="filter-field"> -->
+
+            <hr style="width: 96%; margin-top: 20px; margin-left: 2%;">
+            <div>
+                <div style="display: flex; align-items: center; width: 100%;">
+                 <div class="field-container"  style=" margin-right: 10px;">
+                     <label>Select Sorting</label>
+                     <select  class="filter-field" id="sortProperty" onchange="sorting()">
+                         <option value="">Select Property</option>
+                         <option value="intelligence ">Intelligence</option>
+                         <option value="speed">Speed</option>
+                         <option value="combat">combat</option>
+                         <option value="durability">Durability</option>
+                         <option value="power">Power</option>
+                         <option value="strength">Strength</option>
+                     </select>
+                 </div>
+                 
+                 <div class="field-container">
+                     <label>Select Sorting</label>
+                     <select class="filter-field" id="sortType" onchange="sorting()">
+                         <option value="">Select Sort Type</option>
+                         <option value="asc">Ascending</option>
+                         <option value="desc">Descending</option>
+                     </select>
+             
+                 </div>
+                </div>
+
+             </div>
+           
+        </div>
+    </form>
+
+       <div style="display: flex; justify-content: space-between; ">
+            <h1>All superrheroes (<span id="current"></span><span id="count"></span>)</h1>
+            <div style="display: flex;">
+                <input type="number" placeholder = "Go to page" id="goto">
+                <button class="btn" onclick="goToPage()">Go</button>
+            </div>
+            
+            <div>
+                <button class="btn" onclick="prev()">Previous</button>
+                <button class="btn" onclick="next()">next</button>
+            </div>
+       </div>
+        <!-- creating card  -->
+        <div class="superheroes" id="superheroes1">
+                
+        </div>
+       
+    </div>
+</div>
+    <script src="./main.js"></script>
+
+</body>
+</html>

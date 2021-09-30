@@ -7,6 +7,493 @@
     <title>Document</title>
 </head>
 <body>
-    
+        <button onclick="hitMe()">Submit</button>
+    <script>
+        // declaring variable we used var variable_name = value;
+
+        var name = "bhagya";
+        var age = 22;
+        
+        // var a = 10;
+        // var b  = 20;
+        // var sum = a + b;
+        // if (a>b) {
+        //     console.log("a is greater than b: "+ a)
+        // }
+        // else{
+        //     console.log("b is greater than a: "+ b)
+        // }
+
+        // console.log, here it is a predefined like printf which is used to print anything(console is object and log is a function)
+        // for printing a name 
+        // console.log(`my name is ${name} and my age is ${age}`);
+        // console.log("my name is "+ name + " and my age is "+ age);
+        // console.log(sum);
+
+
+        // Operators
+        // types of operators
+        // Arithmetic oprator(+ - * / %)
+        // relational operator(< > <= >= == !=)
+        // Assignment operator(= += -= *= /=)
+        // logical operator(&& ||)
+        // identity operator(=== !==)
+        var a= 10;
+        var b = 20;
+        // console.log(a+b);
+        // console.log(b-a);
+        // console.log(b*a);
+        // console.log(a/b);
+
+        // relational
+        // console.log(a>b);
+        // console.log(a<b);
+        // console.log(a != b);
+        // console.log(a==b);
+        // here is one exception with the ""=="  , it only work with same variable who looks are same
+        var n = "5";
+        var m = 5;
+        // console.log(n == m); here it gives out as true but we want false because howw string will be equal to number
+
+        // for this we used which we called identity opertors
+
+        // console.log(a === b) //this gives us correct ans which false
+
+
+        //assignment operator
+        // var name = "bhagya"; // here = is an assignment operator
+        // console.log(name);
+
+        // a+= b; // output is a = a+b; which is 30
+        // console.log(a);
+        // b -= a;
+        // console.log(b);
+        // b*=b;
+        // console.log(b);
+        // a/=a;
+        // console.log(a);
+
+
+        // conditional statment
+
+        // there are 5 types of conditional statment
+        // 1. if
+        // 2. if-else
+        // 3. multiple if
+        // 4. switch 
+        // 5.nested if 
+
+        // if(condition){
+
+        // } here is syntax this only excute when condition is true otherwise doesn't return
+
+        // if(a<=b){
+        //     console.log("a is smaller or equal to b");
+        // }
+
+    //2. if-else statement it works like when one condition is false then it move to else and print whatever written in the block 
+        // syntax
+        // if (condition) {
+            
+        // } else {
+            
+        // }
+
+
+            // if (a>b) {
+            //     console.log("a is greater than b")
+            // } else {
+            //     console.log("b is gratter than a")
+            // }
+
+
+
+            // 3.multiple 
+
+            // if (a<0) {
+            //     console.log("a is grater than 0");
+            // }
+            // else if(a>b){
+            //     console.log("a is less than b");
+            // }
+            // else if(b<50)(
+            //     console.log("b is less than 50")
+            // )
+            // else{
+            //     console.log("a and b is here");
+            // }
+
+
+            // 4.switch statement
+            // Syntaxt
+
+            // switch (key) {
+            //     case value:
+                    
+            //         break;
+            
+            //     default:
+            //         break;
+            // }
+
+
+            var num = 2;
+            // switch(num){
+            //     case 1: {
+            //         console.log("i am 1");
+            //     }
+            //     case 2:{
+            //         console.log("i am 2");
+            //     }
+            //     case 3:{
+            //         console.log("i am 3");
+            //     }
+            //     default: {
+            //         console.log("i am else");
+            //     }
+            // }
+
+            // in above code there is one mistake that we not added break without using  , it prints all the statement hence we have to always add break after statement
+            switch (num) {
+                case 1:
+                    console.log("i am 1");
+                    break;
+
+                case 2:
+                    console.log("i am 2");
+                    break;    
+            
+                default:
+                    console.log("i am else")
+                    break;
+            }
+
+            // now we added break then it will print only those statemnt which is true
+
+
+            // Loops 
+            // to do somthing repeated work. suppose we have to print hello 5 times for that we have print it 5 times so for reducing writing work 
+            // we used loops
+            // 3 types of loops
+            // 1. while
+            // 2.dowhile
+            // 3.for
+
+            // syntax 
+            // while (condition) {
+                
+            // }
+            // for this we get infinite values of hello or heloo must be printed infinitly
+            var num = 1
+            // while (num<=5) {
+            //     console.log("Hello");
+            // }
+            // for reducing it or printing right output we used increment and decremnt operator, so we have to print hello five times for that here is a code
+
+            // while (num<=5) {
+            //     console.log("Hello");
+            //     num++;
+            // }
+
+                //2. do-while 
+                // syntax
+
+                // do {
+                    
+                // } while (condition); in this loop we first execute the code and then check the  condition
+                // if suppose there is a value that is not satisfying the condition in that case this loop will run only once because it not check first tthe condition 
+
+
+                // do {
+                //         console.log("hello world");
+                //         num++;
+                //     } while (num>5);
+
+                    // this wil print the output 5 times
+                    // do {
+                    //     console.log("hello world");
+                    //     num++;
+                    // } while (num<=5);
+
+
+                    // 3.for loop
+                    // for loop required 3 conditions which are initialization, condition, increment/decrement .
+                    // this is also work similiar to the all other loops
+
+                    // syntax
+
+                    // for (initialzed; condition ; increment/decrement) {
+                        
+                        
+                    // }
+
+                    for (let i = 0; i < 5; i++) {
+                        console.log("Hello");
+                        
+                    }
+
+
+
+                    // Array - array is nothing but the collection of similar datatype element
+                    // how to store array for that 
+
+                    // var array_name = [val1, val2, val3];
+
+                    var arr = [1, 2,3,4,5];
+
+                    // for accessing the values of array for that we used index , index is nothing but the interger which in array start from 
+                    // 0 to n-1 here n is size of array 
+                    // now for printing the array we used
+                    // console.log(arr[0])
+                    // console.log(arr[1])
+                    // console.log(arr[2])
+                    // console.log(arr[3])
+                    // console.log(arr[4])
+                    // now for large no of array elements we are not able to write this hole code again and again so we are using the forloop
+
+                    // for (let index = 0; index < arr.length; index++) {
+                    //     console.log(arr[index])
+                        
+                    // }
+
+                    // functions
+                    // it is a blockof code with name and it can't execute by default for that we have to call it.
+                    // functions in js have to ways to write
+                    // 1.declaration
+                    // 2. defination
+                    // syntax
+                    // function name(params) {
+                        
+                    // }
+
+                    // name();     calling a function
+
+                    // int function there is keyword that is return , it works with to get somthing form the function 
+                    // default function is always return
+
+                    function print() {
+                        console.log("hello");
+                        
+                    }
+                    print();
+
+                    // parameters are written in ( )this
+                    // arguments are that when we call a function_name(a,b);
+                    function add(a, b) {
+                        return a+b;
+                        
+                    }
+                    let data = add(5,10);
+
+
+                    // default parameters
+                    // in this we pass value to a function parameter, if at the time of function call we not pass any argument value 
+                    // then in function parameters values will be used as default value
+                    function sum(n1, n2, n3=3){
+                        return n1+n2+n3;
+                    }
+                    // console.log(sum(1, 2));
+                    // here the output is 6 as we not pass any value to n3 then it takes the value 3
+                    // now we work with the 3 new arguments values
+                    console.log(sum(4,5,6));
+                    // the output is  15 here the value of n3 is 6 not 3 hence the output is different
+
+
+                    // call a function using button
+                    // here is one event onclick 
+                    function hitMe(){
+                        console.log("hello everyone");
+                    }
+                    
+                    // objects
+                    // collection of related properties/entity
+                    // in js we don't need class we directly made objects
+                    // syntax 
+                    // let student = {
+                    //     property 1: valu1;
+                    //     property 2: valu2;
+                    //     .
+                    //     .
+                    //     .
+                    // }
+
+                    // now lets create a an object
+                    let team = {
+                        leaderName : "bhagya",
+                        gameName : "Football",
+                        members : 10  
+                    }
+
+                    // for accesing the object property we used ( . ) 
+                    // syntax 
+                    // objectname.propertyname;
+
+                    console.log(team.leaderName);
+
+
+                    // inbuild functions 
+                    // 1.math functions
+                    // 2. string functions
+                    // 3. Array functions
+
+                //    1 .math functions
+
+                // PI
+                let dam = Math.PI;
+                console.log(dam)
+
+                // sqrt
+                console.log(Math.sqrt(4))
+
+                // min 
+                // finding minimum element from the set of numbers
+
+                
+                console.log(Math.min(1,2,3,4))
+
+                // max
+                // finding max element from the set of numbers
+                 console.log(Math.max(1,2,34,55))
+
+                //  round 
+                // it works like rounding out a decimal value to whole value
+                console.log(Math.round(1.4))
+                console.log(Math.round(1.8))
+                
+                // toFixed 
+                // 2 decimal after a number
+                // it gives us 2 zeros after decimal point but not a decimal number
+                console.log(Math.round(2.4).toFixed(2))
+
+                // having number upto  2 decimal number
+                console.log((2.546).toFixed(2))
+
+                // ceil
+                // it always go towards a top
+                console.log(Math.ceil(2.1))
+
+                // floor
+                //always go towards a bottom
+                console.log(Math.floor(2.6)) 
+
+                // random
+                // it gives us a random number 
+                // and range to 0-1
+
+                console.log(Math.random())
+                // want a digit , multiply by 10 it gives us 
+                console.log(Math.random()*10)
+
+                // absolute
+                console.log(Math.abs(-33))
+
+                // log
+                    console.log(Math.log(2))
+
+
+
+
+
+
+                    // string functions
+                    // it is similar to  array , string is nothing but he collections of characters
+                    // work simillar to array
+
+                    let samy = "tictacktoe";
+
+                    // length
+                    console.log(samy.length)
+
+                    // substring()
+                    // function which returns string in continues from a main string
+
+                    console.log(samy.substring(2,4))
+                    // the above code is telling us that 2 is starting index and 4 is eend index
+                    // but end index is explicit it start counting from start
+
+                    // substr()
+                    // below code indicates that the  the 2 index from which the string is starting and 4 is starts counting from index 2
+
+                    console.log(samy.substr(2,4))
+
+
+                    // replace()
+                    // it works like replacing a single character which occure 1st
+
+                    console.log(samy.replace("t","a"))
+
+                    // for replaccing every character from string
+
+                    console.log(samy.replace(/a/g,"i"))
+
+                    // tolowercase()
+
+                    console.log(samy.toLowerCase())
+
+                    // touppercase()
+                    console.log(samy.toUpperCase())
+
+                    // charat(index)
+
+                    // check which character is present at which index
+
+                    console.log(samy.charAt(3))
+
+                    // charcodeAt()
+                    // it basically gives us a ASCII value of a character on which the index we have passed
+                    console.log(samy.charCodeAt(2))
+
+
+                    // indesxOf('')
+                    // it gives us the index of the character that we have passed
+                    // but ony 1st occurance character
+                    console.log(samy.indexOf('t'))
+
+                    // includes("string")
+                    // checks the parameter string is present in main string or not
+                    // this function return a boolean value
+                    console.log(samy.includes("tic"))
+
+
+                    // Array functions
+
+                    let avaengers = ["thor","captain america","ironman","black widow","hawkeye"];
+
+                    // // foreach(function(element,index)){
+                    //     console.log(element,index);
+                    // }
+                        // function is looping through whole array and call each element that pass as praameter
+                        // function calling internally
+                    avaengers.forEach(function (avenger,i) {
+                        console.log(avenger,i)
+                    })
+
+
+
+                    // map , return + display the element
+                    // go through each and every element and it retrun all the element one bye one and turns into array
+                    // basically it creates an array
+                    let sam =avaengers.map(function(avenger,i)
+                    {
+                        return (avenger);
+                    }
+                    )
+                    console.log(sam);
+
+
+                    // filters()
+
+                    let tim = avaengers.filter(function(avenger,i){
+                        return avenger;
+                    });
+                    console.log(tim)
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Script>
+        // Asynchronous JS
+        // => it executes everything one by one
+
+        // works of Asychronous Task
+        // when event loop finshed everything and then come to task queue where asynchronous stored the  it executed when all call stack is executed
+
+
+        // event loop => is calling on events
+        // 1.onload
+        // 2.onclick
+        // 3.ondone
+
+        // call stack => where all the instruction are executed
+        // if in instruction there is any asynchronous task is there then it will pushed into the task queue
+
+        // task queue => where the asynchronous task stores for some time
+        // 2 types 
+        // 1.promises => micro task queue
+        // 2.setTimeout = >by default it is asynchronous task
+                        // => and macro task queue
+                        // wep API => which stored the counter of the setTimeout function 
+                        // which basically called setTimeout function after finishing the counter 
+
+        //   task queue are of 2 types 
+                    // 1. micro =>executed at the current loop end
+                    // 2. macro => executed next loop  
+
+        //callbacks hell => caused by coding with complex nested callbacks function
+        // if single call back function through error then all function not give us expected output 
+
+        // to overcome this callback hell we used promises
+
+        // promises => it's like an object , handling the asynchronus task
+        // it has only one by default callback function
+
+        // 2 parts 
+        //  i.resolve
+        // ii.reject
+        // let promise = new Promise((resolve,reject)=>{
+        //     let task =true;
+        //     if(task === true){
+        //         resolve("data");
+        //     }
+        //     else{
+        //         reject("error");
+        //     }
+        // });
+        // console.log(promise)
+            
+        setTimeout(data=()=>{
+            console.log("hello World!")
+        },1000);
+        console.log("hi")
+    </Script>
+</body>
+</html>
