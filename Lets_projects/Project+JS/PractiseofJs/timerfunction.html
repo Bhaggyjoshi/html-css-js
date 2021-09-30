@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="text" style="display: none;">hello all come with wee to learn js</h1>
+    <button onclick="stopSi()">Not to meet</button>
+
+    <p id="clock">
+
+    </p>
+
+    <div id=one>
+
+    </div>
+
+    <script >
+
+
+
+        // current time
+        document.getElementById('clock').innerText = new Date().toLocaleTimeString();
+
+        // timer function -> call a function based on the time interval
+        // need of timer function -> like stop code inbetween.
+
+        // types of timer function  
+        // 1. setTimeOut(function(), time in ms)
+        // work when page get load and after that the whatever the time we passed after that code will execute
+
+        // syntax
+        // setTimeout(() => {
+            
+        // }, timeout);
+
+        // setTimeout(() => {
+        //     document.getElementById('text').style.display= "block";
+        // }, 5000);
+
+        // setinterval ->the function is called again and again with whatever time we passed in timer function
+
+        // let si = setInterval(() => {
+        //     document.getElementById('clock').innerText = new Date().toLocaleTimeString();
+        // }, 1000);
+
+        // stopSi=()=>{
+        //     clearInterval(si);
+        // }
+        //     let temp =100;
+        //     let anim= setInterval(() => {
+        //     if(temp < 500){
+        //         document.getElementById('one').style.marginLeft=`${temp}px`;
+        //         temp += 100;
+        //     }
+        //     else{
+        //         clearInterval(anim);
+        //     }
+        // }, 1000);
+
+
+
+        // requestanimationframe -> works on animating the thing
+            let temp = 0
+        anim = () =>{
+            document.getElementById('one').style.marginLeft=`${temp}px`;
+             temp += 5; //5 pxper frame
+             requestAnimationFrame(anim);
+        }
+        anim();
+
+        // cancelAnimationFrame -> stopes the requestAnimationFrame
+    </script>
+</body>
+</html>

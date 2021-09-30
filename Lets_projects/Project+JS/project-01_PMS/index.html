@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+        <div class="container">
+            
+            <div class="form_container">
+                <input type="text" placeholder="Enter name" id="name">
+                <input type="text" placeholder="Enter price" id="price">
+                <input type="text" placeholder="Enter quantity" id="quantity">
+                <button class="btn" onclick="addProduct()">Add product</button>
+            </div>
+
+            <div class="table_container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>name</th>
+                            <th>price</th>
+                            <th>Quantity</th>
+                            <th>Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_data">
+                       
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form_container update_form" id ="update_form">
+                <input type="text" placeholder="Enter name" id="up_name">
+                <input type="text" placeholder="Enter price" id="up_price">
+                <input type="text" placeholder="Enter quantity" id="up_quantity">
+                <button class="btn" onclick="updateProduct()">Update product</button>
+            </div>
+
+
+        </div>
+        <script src="./index.js"></script>
+</body>
+</html>
