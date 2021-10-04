@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <button onclick="message()">click me!</button>
+
+    <script>
+
+        function message() {
+            console.log("Good Morning '-'")
+            console.log("Good Afternoon '-'")
+            console.log("Good Evening '-'")
+            console.log("Good Night '-'")
+        }
+
+        var arr= [1,2,3,4,5,6,7];
+        function dosomething(){
+           
+            for (let i = 1; i <arr.length; i++) {
+               console.log(i)   
+            }
+        }
+
+        dosomething(arr);
+
+        //here p3 is default parameter in which if we new parameter with values and at the time of calling we have not pass any value of p3 then 
+        // it take the value that we assign in parameters.if we passed any value at the time of argument value then it takes that value not a parameter value
+        function add(p1,p2,p3=10) {
+            var res = p1+p2+p3;
+            return res;
+        }
+        console.log(add(1,2));
+        // what i perfome => event 
+        // where it is perform  => event handler
+        // when i perfom on whatever that executed => event Listener
+
+    </script>
+</body>
+</html>

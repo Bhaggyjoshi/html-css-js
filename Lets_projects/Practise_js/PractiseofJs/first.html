@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        // javascript is scripting language which bascially works on front and backend site
+        // purpose of using of js is DOM => document object model which deals with 
+        // console is object which works samee as browsers console , it si used to print whatever we wright inside it
+        console.log("hello world")
+
+        // variables
+        // datatype identifer/variable name = value;
+        var name  = "bhagya";
+        console.log("Hello "+ name)
+        var a = 10;
+        var b =20;
+        console.log(a+b)
+
+        console.log(`hello ${name}. Nice to meet you!`)  // this is used to concatenate string and variable
+
+        // opertors
+        // 1.Arithmetic => + - *  / %
+        var num  = 10;
+        var tum = 20;
+        console.log(num+tum)
+        console.log(tum-num)
+        console.log(num*tum);
+        console.log(num/tum)
+        console.log(num%tum)
+
+        // Relational => == > < <= >= !=
+
+        console.log(num==tum); // it will give true when the string equals to number in looking
+        console.log(num!=tum)
+        console.log(num > tum)
+        console.log(num<tum)
+        console.log(num<=tum)
+        console.log(num>=tum)
+
+        // Assignment => += -= *= /= 
+        console.log(num+=2)
+        console.log(num-=10)
+        console.log(num*=5)
+        console.log(num/=2)
+
+        // identity => === !==
+        var tem = "10"
+        console.log(num === tem)
+        console.log(num !== tem)
+
+        // logical => && ||
+
+        console.log(num >10 || num<0)
+        console.log(num<10 && num>6)
+
+        //unary => ++ --
+        
+        console.log(num++, ++num)
+
+
+        // conditionalstatment
+        // if , if-else, multiple if , switch, nested if-else
+        if(num>tem){
+            console.log("num is greater"+num)
+        }else{
+            console.log("tem is greater"+tem)
+        }
+
+        // switch
+        tem = 15;
+        switch (tem) {
+            case 5:
+                console.log(`the value is ${tem}`)
+                break;
+            case 10:
+                console.log(`the value is ${tem}`)
+                break;
+            case 15:
+                console.log(`the value is ${tem}`)
+                break;    
+        
+            default:
+                console.log("not me as tem")
+                break;
+
+        }
+        // ternary operator =>?:
+        tem >10 ? console.log("tem is greater than 10") : console.log("tem is smaller than 10");
+
+
+        // loops => for , while, do-while
+
+        var n =1;
+        while (n<11) {
+            console.log(2*n);
+            n++;
+        }
+
+        // do-while loop
+        var t = 11
+        do {
+            console.log("I am the one ")
+        } while (n<11);
+
+        // for loop
+        for (var index = 1; index < 11; index++) {
+            console.log(index*3);
+        }
+
+        // Array => collection of similar data type element
+        var data = [1,2,3,4,5];
+        for(var i = 0;i<data.length;i++){
+            console.log(data[i]);
+        }
+
+        var heroes = ["Thor","Captain America","Iron Man","Widow","hawkeye"];
+        for(var i =0;i<heroes.length;i++){
+            console.log(heroes[i]);
+        }
+    </Script>
+</body>
+</html>
