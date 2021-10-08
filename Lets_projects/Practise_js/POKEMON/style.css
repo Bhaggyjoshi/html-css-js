@@ -121,4 +121,13 @@ body{
     width: 10%;
     padding: 15px 10px;
     background: gray;
+    position: fixed;
+    left:89%;
+    top: 80vh;
+    border-radius: 5px;
+    display: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #29323c;
+    right: 5%;
 }

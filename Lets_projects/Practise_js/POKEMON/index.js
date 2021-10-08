@@ -60,6 +60,7 @@ fetch("http://localhost:8000/pokemons")
     console.log(data);
     allPokemons=data;
     display(allPokemons);
+    
 })
 .catch((err)=>{
     console.log(err);
@@ -90,6 +91,12 @@ addPokemon=()=>{
             document.getElementById('clearForm').reset();
             allPokemons.push(data);
             display(allPokemons);
+            document.getElementById('bot').style.display="block";
+            document.getElementById('message').innerText = "Pokemon Created";
+
+            setTimeout(()=>{
+                document.getElementById('bot').style.display="none";
+            }, 5000);
             
         })
         .catch((err)=>{
@@ -108,6 +115,13 @@ deletePokemon=(id)=>{
         let ind = allPokemons.findIndex(p=>p._id==id); 
         allPokemons.splice(ind,1);
         display(allPokemons);
+
+        document.getElementById('bot').style.display="block";
+            document.getElementById('message').innerText = "Pokemon Deleted";
+
+            setTimeout(()=>{
+                document.getElementById('bot').style.display="none";
+            }, 5000);
         
     })
     .catch((err)=>{

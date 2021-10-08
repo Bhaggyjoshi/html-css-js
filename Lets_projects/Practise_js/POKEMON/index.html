@@ -10,8 +10,10 @@
 </head>
 <body>
    
-    <div class="bot">
+    <div class="bot" id="bot">
+        <p id="message"> 
 
+        </p>
     </div>
     <div class="container" >
         <h1 class="title">Add Pokemons</h1>
@@ -25,7 +27,7 @@
                     <input class="imp" type="text" id="attack" placeholder="Attack">
                     <input class="imp" type="text" id="defense" placeholder="Defense">
                     <input class="imp" type="text" id="speed" placeholder="Speed">
-                    <button class="btn" type="submit" onclick="addPokemon()">Create</button>
+                    <button class="btn" type="button" onclick="addPokemon()">Create</button>
                 </div>
             </form>
         </div>
