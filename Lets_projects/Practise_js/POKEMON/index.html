@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon  World</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 <body>
    
-    <div class="title">
-        <h2>Welcome To Pokemons World '-' </h2>
+    <div class="bot">
 
-        
-        
     </div>
-    <div class="container" id="pokemons">
-        <div class="content">
-            <h2>name</h2>
-            <p>type</p>
+    <div class="container" >
+        <h1 class="title">Add Pokemons</h1>
+        <div class="add">
+            
+            <form id="clearForm">
+                <div style="padding:15px; display: flex; justify-content: space-between;flex-wrap: wrap;" >
+                    <input class="imp" type="text" id="name" placeholder="Name">
+                    <input class="imp" type="text" id="type" placeholder="Type">
+                    <input class="imp" type="text" id="hp" placeholder="HP">
+                    <input class="imp" type="text" id="attack" placeholder="Attack">
+                    <input class="imp" type="text" id="defense" placeholder="Defense">
+                    <input class="imp" type="text" id="speed" placeholder="Speed">
+                    <button class="btn" type="submit" onclick="addPokemon()">Create</button>
+                </div>
+            </form>
+        </div>
+
+        <h1 class="title">All Pokemons</h1>
+
+        <div class="pokemons" id="pokemons">
+            
         </div>
     </div>
     
