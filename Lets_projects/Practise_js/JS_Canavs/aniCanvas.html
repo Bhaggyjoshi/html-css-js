@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        canvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+        <canvas id="content" width="1000" height="800" ></canvas>
+
+    <script>
+        let canvas = document.getElementById('content');
+        let ctx = canvas.getContext('2d');
+
+        // fillRect => for reactangle having parameters as (x,y,width,height)
+        // ctx.fillRect(0,0,1400,800);
+        // ctx.fillStyle = "white";
+        // ctx.arc(700,150,90,0,Math.PI*2,false);
+        // ctx.fill();
+
+        // // stars
+        // for(let i =0;i<100;i++){
+        //     ar
+        // }
+
+        // clearRect(x,y,width,height) => cut out the part of canvas which we want
+        let x =20
+        let dx =5;
+        let y=100;
+        let dy =5;
+        function moveRect(params) {
+                ctx.beginPath();
+                ctx.clearRect(0,0,canvas.width,canvas.height);
+                ctx.arc(x,y,20,0,Math.PI*2,false);
+                ctx.fill();
+                x += dx;
+                y += dy;
+                if(x >canvas.width || x<0){
+                    dx =-dx
+                }
+                if(y>canvas.height || y<0){
+                    dy =-dy
+                }
+            
+           
+            requestAnimationFrame(moveRect);
+        }
+        moveRect();
+
+    </script>
+</body>
+</html>
